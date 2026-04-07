@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- just defining the language as english -->
+<head>
+  <title>Community Wellbeing Hub</title>
+  <meta charset="UTF-8"> 
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--making webiste workable in mobile as well -->
+  <link rel="stylesheet" href="homepage.css" /> <!--connecting homepage file with its css file to import all styling-->
+</head>
+<body>
+  <header class="fornavbar"> <!--starting with navbar section which is in the top of page-->
+    <div class="logo-area"> <!-- describing class for logo where logo's image get in -->
+      <img src="logo.png" alt="Community Hub Logo" class="logo" height="40" width="50"/> <!-- defining size for logo -->
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar" id="main-navbar">
+      <a href="index.html">Home</a> <!-- linking all the webpages with the button from navbar -->
+      <a href="servicepage.html">Services</a>
+      <a href="eventpage.html">Event</a>
+      <a href="contactpage.html">Contact</a>
+    </nav>
+  </header>
+
+  
+  <section class="makinggap"></section> <!-- giving a space or a small gap between two sections -->
+
+ 
+  <section class="hero">  <!-- now the main section of page i.e. hero section starts -->
+    <div class="hero-content">  <!-- defining how the text looks in this section from class called "hero" -->
+      <h1>Welcome to Community Wellbeing Hub</h1>  <!-- main headline of homepage -->
+      <p>“Empowering healthier lives through community support and care.”</p>  <!-- simple intro line for the website -->
+      <p>Let’s connect and build a healthier community together</p>
+      <a href="servicepage.html" class="main-btn">Explore our services</a>  <!-- declaring the main button of page where its structure is 
+                                                                defined from the class mentioned inside-->
+    </div>
+  </section>
+
+  
+  <section class="makinggap"></section>  <!-- This one will give space between section like it did earlier -->
+
+  
+  <section class="card-section"> <!-- creatinhg a section where i can put all those service card in a specfic section -->
+    <div class="cards-container">
+      <div class="card"> <!-- creating three different cards step by step and adding some text and a button inside it -->
+        <h3>Mental Health Support</h3>
+        <p>Access local counselling & support</p>
+        <a class="card-btn" href="servicepage.html">Read more</a> <!-- making the button clickable by inserting the class inside button -->
+      </div>
+
+      <div class="card">
+        <h3>Fitness and Activity</h3>
+        <p>Join exercise & wellness programs</p>
+        <a class="card-btn" href="servicepage.html">Read more</a>
+      </div>
+
+      <div class="card">
+        <h3>Family Support</h3>
+        <p>Help for parents & families</p>
+        <a class="card-btn" href="servicepage.html">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="makinggap"></section><!-- Making another gap between two section -->
+
+  
+  <section class="card-section"> <!-- defining another section as my service section is over and now starting section for event -->
+    <div class="cards-container"> <!-- defining cards structure in the same way I did in service section, so calling same class -->
+      <div class="card">
+        <h3>Yoga Class</h3>
+        <p>Starting from : 4 June 2026</p>
+               <a class="card-btn" href="eventpage.html">Read more</a>
+
+      </div>
+
+      <div class="card">
+        <h3>Cooking Workshop</h3>
+        <p>Starting from : 14 June 2026</p>
+                     <a class="card-btn" href="eventpage.html">Read more</a>
+
+      </div>
+
+      <div class="card">
+        <h3>Stress Seminar</h3>
+        <p>Starting from : 24 June 2026</p>
+                       <a class="card-btn" href="eventpage.html">Read more</a>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="makinggap"></section> <!-- again putting another gap between sections -->
+
+ 
+  <footer class="footer"> <!-- From here footer section starts -->
+    <div class="footer-left"> <!-- First we are designing text for left hand side -->
+      <p>Community Wellbeing Hub</p>
+      <p>“Supporting your Health & Wellbeing”</p>
+    </div>
+
+    <div class="footer-right"> <!-- After completing left side, starting with right hand side of footer -->
+      <p>Email: communitywellbeing@gmail.com</p>
+      <p>Phone: 07570730568</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script> <!-- simple mobile navigation toggle script -->
+</body>
+</html>

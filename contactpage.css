@@ -1,0 +1,236 @@
+.wholecontactpart { /*this class will cover whole section of conatct page below navbar */
+  background-color: #dfe8e4; /* setting the color of contact page like previous one*/
+  padding: 50px 30px 45px 30px; /* allocating spcae inside section from all four sides*/
+  text-align: center; /* putting all those text in center */
+}
+
+.wholecontactpart h1 { /* starting the heading part*/
+  font-size: 42px;
+  font-family: Arial, sans-serif;
+  font-weight: normal; /* it will make the text looks normal, as h1 will make everything bold*/
+  margin-bottom: 18px; /* giving some gap between subtext and the heading one */
+}
+
+.contacttext { /* design the subtext*/
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 40px; /* giving gap between boxes and subtext*/
+}
+
+.wrappingwholelement { /* wrapping both boxes in same field*/
+  width: 1240px; /* allocating total width for box areas*/
+  margin: 0 auto; /* making margin 0 will make the whole layout horizontally */
+  display: flex; /*  flex means to align those elemnts of pages in same line*/
+  justify-content: space-between;  /* gives gap between filling box and contaxt box*/
+  align-items: flex-start; /* aligning boxes from top*/
+  gap: 34px; /* gap between two boxes*/
+}
+
+.contactformbox { /* this one is for the box where client will fill information*/
+  width: 745px;
+  height: 420px;
+  background-color: #ffffff;
+  border-radius: 22px; /*curving the corner of boxes*/
+  padding: 34px 40px 36px 40px; /* inner spacing of the box*/
+  text-align: left; 
+  
+}
+
+.inputpart { /* for all the lines where input fields are there */
+  margin-bottom: 20px;  /* space between each input element*/
+}
+
+.inputpart label { /* design for the text in label*/
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.inputpart input { /* designing the text field where information are asked*/
+  width: 100%; /* making it same as width of box*/
+  height: 45px;
+  border: 1px solid #c7cbcf; /*giving thickness for the lines of text box */
+  border-radius: 10px;
+  padding: 0 18px; /* inner horizontal spacing for the text box*/
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+}
+
+.inputpart textarea { /* this one is for the exact place where client will put messages*/
+  width: 100%;
+  height: 96px;
+  border: 1px solid #c7cbcf;
+  border-radius: 10px;
+  padding: 16px 18px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+  
+}
+
+.sendbtn { /* for the button in the form box*/
+ 
+  padding: 14px 26px; /* giving perfect size for button*/
+  font-size: 18px;
+}
+
+.contactinfobox { /* now the second boc designing starts*/
+  width: 490px;
+  background-color: floralwhite;
+  border-radius: 22px;
+  padding: 34px 34px 28px 34px; /* giving inner spacing to that box so that its shape looks good*/
+  text-align: left;
+  
+}
+
+.contactinfobox h2 { /* heading of that contact box*/
+  font-size: 28px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 22px;
+  color: #222;
+}
+
+.contactinfobox hr { /* for smal line isnide the box*/
+  border: none; /* removing default border that shows in text*/
+  border-top: 1px solid #cfd5d1;
+  margin-bottom: 28px;
+}
+
+.infolinewithsymbol { /* for all the info rows in box */
+  display: flex;
+  align-items: center; /* centers element vertically*/
+  gap: 16px; /* giving space between text and icon*/
+  margin-bottom: 28px; /* space between each rows*/
+}
+
+.infolinewithsymbol p { /* text inside contact box */
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #222;
+  margin: 0; /* removig all default margin*/
+}
+
+.icon {
+  display: inline-flex; /* makes sure both icons align with text next to it  */
+  align-items: center; /* centering icon vertically*/
+  justify-content: center; /* centering element horizontally*/
+  font-size: 26px;
+  width: 30px; /* giving exact width for alignment*/
+}
+
+.emailicon {
+  color: #2f8f57;
+}
+
+.phoneicon {
+  color: #e0a93b;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+/* ================= FINAL MOBILE OVERRIDE ================= */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .wholecontactpart {
+    padding: 28px 14px !important;
+  }
+
+  .wholecontactpart h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .contacttext {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 22px !important;
+  }
+
+  .wrappingwholelement {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .contactformbox,
+  .contactinfobox {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .contactformbox {
+    height: auto !important;
+    padding: 20px 16px !important;
+  }
+
+  .contactinfobox {
+    padding: 22px 16px !important;
+  }
+
+  .contactinfobox h2 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .inputpart {
+    margin-bottom: 16px;
+  }
+
+  .inputpart label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  .inputpart input,
+  .inputpart textarea {
+    width: 100% !important;
+    font-size: 16px;
+  }
+
+  .inputpart input {
+    height: 42px;
+    padding: 0 14px;
+  }
+
+  .inputpart textarea {
+    height: 100px;
+    padding: 12px 14px;
+    resize: vertical;
+  }
+
+  .sendbtn {
+    width: 100%;
+    max-width: 220px;
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+  .infolinewithsymbol {
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .infolinewithsymbol p {
+    font-size: 16px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  .icon {
+    font-size: 20px;
+    width: 22px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+}

@@ -1,0 +1,186 @@
+.bookmain { /* this class will specify whole booking space*/
+  background-color: #f5f2ed; /*this one will specify background colour of booking space*/
+  text-align: center; /*centers all the text in booking space*/
+  padding: 30px 20px; /* adds space inside section from top-bottom and right-left*/
+}
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #111;
+  border-radius: 1px;
+}
+
+.navbar.open {
+  display: flex;
+}
+
+.ntg {
+  background-color: #f5f2ed;  /*just adding some colors in empty specified space*/
+  height: 30px;
+}
+
+.bookmain h1 { /*main heading for booking space*/
+  font-size: 35px;
+  margin-bottom: 15px; /*adds space below the heading text*/
+}
+
+.booktext { /* styling for the subtext below */
+  font-size: 20px; 
+  margin-bottom: 15px; /* the gap between subtext and the line below*/
+}
+
+.stepsline { /*styling for the flow line of text*/
+  font-size: 20px;
+  margin-bottom: 25px; /*get space below the subtext*/
+  font-weight: bold;
+}
+
+.bookbox { /*this will style the whole input box of form*/
+  width: 600px;
+  background-color: #dfe8e4;
+  margin: 25px auto; /*add space between top-bottom and centers the box horizontally*/
+  padding: 20px; /*this is the inner spacing of box*/
+}
+
+.formrow { /*designs the rows inside form box*/
+  display: flex;  /*make sure that label and input in one row*/
+  justify-content: space-between; /*put label to left and input section to right*/
+  align-items: center;  /*align both items in center*/
+  margin-bottom: 10px; /*stes constant gap between each row*/
+}
+
+.formrow label {  /*styling label part from the form box*/
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formrow input { /*styling input part from the form box*/
+  width: 350px; /*setting width of input box*/
+  height: 35px; /*similarly setting height*/
+  padding: 5px; /*make sure that there is inner space betwen text and box*/
+  border: none; /*removes the default border*/
+  outline: none; /*removes the default outline shown on click*/
+}
+
+.radioarea {  /*styling the event options*/
+  display: flex; /*making all options in a row*/
+  justify-content: space-between; /*spreads all options with equal*/
+  margin: 20px 0; /*add some space on top-bottom of options*/
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nextbtn {
+  margin-top: 18px; /*gap between button and options*/
+}
+/* ================= MOBILE RESPONSIVE ================= */
+/* ================= FINAL MOBILE OVERRIDE ================= */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .bookmain {
+    padding: 24px 14px !important;
+  }
+
+  .ntg {
+    height: 14px !important;
+  }
+
+  .bookmain h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .booktext {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .stepsline {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .bookbox {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 18px auto !important;
+    padding: 18px 14px !important;
+  }
+
+  .formrow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .formrow label {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .formrow input {
+    width: 100% !important;
+    height: 42px !important;
+    font-size: 16px;
+  }
+
+  .radioarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+  }
+
+  .radioarea label {
+    line-height: 1.5;
+  }
+
+  .nextbtn {
+    width: 100%;
+    max-width: 220px;
+    margin-top: 14px !important;
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+}
+

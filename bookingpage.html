@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Event</title>
+
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="bookingpage.css">
+</head>
+<body>
+
+  <header class="fornavbar"> <!--navbar is same as in previous one-->
+    <div class="logo-area">
+      <img src="logo.png" class="logo" alt="Community Hub Logo">
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar" id="main-navbar">
+      <a href="index.html">Home</a>
+      <a href="servicepage.html">Services</a>
+      <a href="eventpage.html">Event</a>
+      <a href="contactpage.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="bookmain"> <!--the whole section for booking starts-->
+    <h1>REGISTER FOR AN EVENT</h1> <!--creating a header to inform viewer about booking-->
+    <p class="booktext">Register for community activities in three simple steps</p> 
+    <p class="stepsline">Step 1 — Personal Info → Step 2 — Select Event → Step 3 — Confirm</p> <!--showing steps with arrow symbol-->
+
+    <!-- FORM BOX -->
+    <div class="bookbox"> <!--calling the class and creating a form box-->
+
+      <div class="formrow"> <!--the topinc and input boxes are created row by row with the style from class-->
+        <label>Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="formrow">
+        <label>Email address:</label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+
+      <div class="formrow">
+        <label>Phone number:</label>
+        <input type="text" id="phone" placeholder="Enter your phone">
+      </div>
+
+      <div class="formrow">
+        <label>Event date:</label>
+        <input type="date" id="event-date" name="event-date" min="2026-04-02" value="2026-04-02">
+      </div>
+      </div>
+
+
+    
+    
+    <div class="bookbox"> <!--after finishing all input section, time for choosing event-->
+
+      <h3>Select an event you want to join</h3>
+
+      <div class="radioarea"> <!--creating a option like interface so that a user can tick the one they want-->
+        <label><input type="radio" name="event"> Yoga Class</label>
+        <label><input type="radio" name="event"> Cooking Workshop</label>
+        <label><input type="radio" name="event"> Stress Seminar</label>
+      </div>
+
+      <button class="card-btn nextbtn" id="confirm-btn">Confirm</button>
+
+    </div>
+<div class="ntg"></div> <!--just adding so that the page will cover whole desktop screen-->
+  </section>
+
+  
+
+  <footer class="footer">
+    <div>
+      <p>Community Wellbeing Hub</p>
+      <p>“Supporting your Health &amp; Wellbeing”</p>
+    </div>
+
+    <div>
+      <p>Email: communitywellbeing@gmail.com</p>
+      <p>Phone: 07570730568</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() { // getting buttons ready and allocating its id to variable
+      const confirmBtn = document.getElementById('confirm-btn');
+      const nameInput = document.getElementById('name');
+      const phoneInput = document.getElementById('phone');
+
+      confirmBtn.addEventListener('click', function(e) { //adding click event so that it exectutes after pressing button
+        e.preventDefault(); // Prevent any default action
+
+        const name = nameInput.value.trim(); // getting value from name and phone input box and removing extra spaces
+        const phone = phoneInput.value.trim();
+
+        // Validate name: only letters and spaces
+        if (!/^[a-zA-Z\s]+$/.test(name)) { // making sure name only contains letters and spaces, if not show alert message and stop further execution
+          alert('Please enter only text in name field');
+          return;
+        }
+
+        // Validate phone: only numbers
+        if (!/^\d+$/.test(phone)) { // got this regex code from chatgpt, it will check if the phone number contains only digits, if not show alert message and stop further execution
+          alert('Please enter only number in phone number field');
+          return;
+        }
+
+        // If both validations meet than showing the confirmation message below
+        alert('Thankyou for submitting your details, you will shortly get confirmation in the provided email');
+      });
+    });
+  </script>
+</body>
+</html>

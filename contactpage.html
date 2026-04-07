@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+
+  
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="contactpage.css">
+</head>
+<body>
+
+ 
+  <header class="fornavbar">
+    <div class="logo-area">
+      <img src="logo.png" alt="Community Hub Logo" class="logo">
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar" id="main-navbar">
+      <a href="index.html">Home</a>
+      <a href="servicepage.html">Services</a>
+      <a href="eventpage.html">Events</a>
+      <a href="contactpage.html">Contact</a>
+    </nav>
+  </header>
+
+
+  <section class="wholecontactpart"> <!-- starting main region of this page-->
+    <h1>CONTACT US</h1> <!-- top heading-->
+    <p class="contacttext">Get in touch for support or enquiries</p>
+
+    <div class="wrappingwholelement"> <!-- making sure all elements comes under same class-->
+
+      
+      <div class="contactformbox"> <!--starting left box and its element-->
+
+        <div class="inputpart"> <!--one by one writing things to be written in contact text box-->
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Full Name"> <!--placeholder will decide what to show in box if it's empty-->
+        </div>
+
+        <div class="inputpart">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Email Address">
+        </div>
+
+        <div class="inputpart">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Relaxing session for mind and body"></textarea>
+        </div>
+
+        <button class="card-btn sendbtn">Send Message</button> <!--making button just for prototype purpose only, not clickable-->
+      </div>
+
+      <!-- right info box -->
+      <div class="contactinfobox"> <!--this box will display few contact details-->
+        <h2>Contact Information</h2>
+        <hr>
+
+        <div class="infolinewithsymbol"> <!--writing the contact information part and adding them in same class as we got to put symbol and code together-->
+          <span class="icon emailicon">✉</span>
+          <p>communitywellbeing@gmail.com</p>
+        </div>
+
+        <div class="infolinewithsymbol">
+          <span class="icon phoneicon">☎</span>
+          <p>07570730568</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer  same as in previous pages-->
+  <footer class="footer">
+    <div class="footer-left">
+      <p>Community Wellbeing Hub</p>
+      <p>“Supporting your Health &amp; Wellbeing”</p>
+    </div>
+
+    <div class="footer-right">
+      <p>Email: communitywellbeing@gmail.com</p>
+      <p>Phone: 07570730568</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+* {  /* making sure that default spacing for all elements is 0 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { /* defining the style of whole body part of homepage */
+  font-family: Georgia, serif; /* defining font for all words in body parts but maybe some exception */
+  background-color: #ffffff; /* defining background color as white for default body part*/
+  color: #111; /* Defining color of text inside the homepage*/
+}
+
+
+.fornavbar { /*this part will create a style for the navbar which is on top of page*/
+  width: 100%; /* defining length so that it covers whole deskptop screen*/
+  background-color: #e7e2db; /* defining specific background colour for navbar as default colour of whole page is white*/
+  border-top: 4px solid #1493ff; /* adding a border between website and browser's interface to differentiate its existence*/
+  display: flex; /* it will make sure the logo stays inside navbar*/
+  justify-content: space-between; /* will make sure that elements of left be at left along with right one*/
+  align-items: center; /* it will vertically put elements in middle*/
+  padding: 18px 0px; /* defines iner spacing for the elements in navbar*/
+  padding-right: 15px;
+}
+
+.logo-area {
+  display: flex; /* makes logo and text side by side and avoid disturbance*/
+  align-items: center; /* put the logo in center vertically*/
+  gap: 0px; /* removing the gap between logo and text*/
+}
+
+.logo {
+  width: 300px; /* defining width of logo's image*/
+  height: 52px; /* likewise defining the height of logo*/
+  object-fit: cover;  /* make sure logo will cover whole navbar space */
+}
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 12px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #111;
+  border-radius: 1px;
+}
+
+.navbar {
+  display: flex; /* makes sure that elemnts in navar is align in a row*/
+  gap: 30px; /* this is the gap between elements of RHS of navbar*/
+}
+
+.navbar a {
+  text-decoration: none; /* removes the underline from menu's element as it shows udnerline coz it is a links*/
+  color: #111; /* defining colour of text in navbar*/
+  font-size: 26px; /* defining font size of text*/
+  font-family: Arial, sans-serif; /* defining font style for that text*/
+  transition: 0.3s ease; /* estimate time for button to react after pointer gets on it*/
+}
+
+.navbar a:hover { /* defining the characteristics of hover*/
+  color: #2f8f57; /* defining which colour the text changes into after it gets hovered by pointer*/
+}
+
+
+.makinggap { /* defining the gap between the section */
+  height: 68px; /* defining how long the height be*/
+  background-color: #f5f2ed; /* filling color in that gap*/
+}
+
+
+.hero { /* here the styling for hero section starts*/
+  background-color: #dfe8e4; /* putting background of hero section as light green-grey*/
+  padding: 65px 20px; /* defining the spacing between elements of hero space, 65px is for top-bottom and 20px is for left-right*/
+  text-align: center; /* putting all text in the center*/
+}
+
+.hero-content h1 { /* styling the heading of hero section*/
+  font-size: 64px; 
+  font-weight: normal; /* making sure text doesn't look too heavy*/
+  margin-bottom: 12px; /* spacing the main heading from sub heading/text*/
+}
+
+.hero-content p { /* defining style of subtext from hero section*/
+  font-size: 30px;
+  margin-bottom: 8px; /* spacing between subtext and button which is right below that text*/
+}
+
+.main-btn { /* styling the big main button of herosection*/
+  margin-top: 30px; /* putting some space between the button and subtext which is above that button*/
+  background-color: #32955b;
+  color: white;
+  border: none; /* avoiding any button around the button*/
+  border-radius: 12px; /* curving the corners so that button looks rounded*/
+  padding: 14px 26px; /* defining inner spacing in that button*/
+  font-size: 22px;
+  font-family: "Courier New", monospace;
+  cursor: pointer; /* changing the shape of pointer when*/
+  transition: 0.3s ease;
+  text-decoration: none;      /* removes underline */
+  display: inline-block;      /* makes it behave like a button */
+  text-align: center;         /* centers text inside button */
+}
+
+.main-btn:hover { /* changing colour of the button while hovering*/
+  background-color: #267648;
+}
+
+
+.card-section { /* from here the styling of cad section begins*/
+  background-color: #dfe8e4;
+  padding: 45px 40px; /* maintaining space between cards and whole card section area from top-bottom and right-left*/
+}
+
+.cards-container { /* styling for the card containing section*/
+  max-width: 1300px; /* making it wide sothat it looks clean*/
+  margin: auto; /* make all card in center automatically*/
+  display: flex; /* helps to fit all cards in a same row*/
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; /* spacing between cards in card section*/
+}
+
+.card { /* styling for the card*/
+  background-color: #ffffff;
+  width: 100%; /* declaring width of each card so that it fits on a row*/
+  min-width: 280px; /* prevents card from becoming too small as width is declarde from % so it may be small based on full width */
+  border-radius: 18px; /* makes the corners of each card wounded*/
+  text-align: center; /* making text in center*/
+  padding: 24px 18px; /* spacing of elements inside the card from card's border*/
+}
+
+.card h3 { /* styling the text of card headings*/
+  font-size: 28px;
+  margin-bottom: 18px; /* separating the text from the subtext below it*/
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+}
+
+.card p { /* styling subtext of card*/
+  font-size: 18px;
+  margin-bottom: 22px; /* putting some space between button and subtext */
+  font-family: Arial, sans-serif;
+}
+
+.card-btn { /* styling the button that is located inside each card*/
+  background-color: #32955b;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px; /* giving button a round shape by altering its radius*/
+  padding: 12px 32px; /* declaring the position of card from all side*/
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+  cursor: pointer; /* changing the symbol of button like before */
+  transition: 0.3s ease; /*  will say after how many time interval the hovering works*/
+}
+
+.card-btn:hover { /* changing the color of button when it is hovered*/
+  background-color: #267648;
+}
+
+
+.footer { /* styling the footer of the webpage */
+  background-color: #32955b;
+  color: white;
+  display: flex; /* making all the elements of footer in a same row*/
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* adding some space to the elements of footer from all sides*/
+  font-family: "Courier New", monospace;
+}
+
+.footer p { /* for the text written inside footer */
+  font-size: 17px;
+  margin: 5px 0;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+/* ================= FINAL MOBILE OVERRIDE ================= */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .fornavbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 14px;
+  }
+
+  .logo-area {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo {
+    width: min(220px, 75vw) !important;
+    height: auto !important;
+    object-fit: contain;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 18px;
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .makinggap {
+    height: 22px;
+  }
+
+  .hero {
+    padding: 34px 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .main-btn {
+    width: 100%;
+    max-width: 260px;
+    font-size: 17px;
+    padding: 12px 18px;
+    margin-top: 20px;
+  }
+
+  .card-section {
+    padding: 24px 14px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    min-width: 0;
+    padding: 20px 16px;
+  }
+
+  .card h3 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .card-btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 220px;
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 18px 14px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer p {
+    font-size: 15px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+}
+
+

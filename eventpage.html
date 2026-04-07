@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Page</title>
+
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="eventpage.css"> <!--calling the styles from event.css-->
+</head>
+<body>
+
+  <header class="fornavbar"> <!--navbar is same like it was in previous pages-->
+    <div class="logo-area">
+      <img src="logo.png" alt="Community Hub Logo" class="logo">
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar" id="main-navbar">
+      <a href="index.html">Home</a>
+      <a href="servicepage.html">Services</a>
+      <a href="event.html">Event</a>
+      <a href="contactpage.html">Contact</a>
+    </nav>
+  </header>
+
+ 
+
+  <section class="eventbackground"> <!--creating a spearate section beween navbar and footer to put event cards-->
+    <div class="eventcards"> <!--adding card styles start from here, this one includes all three card-->
+
+      <div class="eventcard"> <!--designing of each cards starts here, that specific class will style the specific event card-->
+        <h3>Yoga Class</h3>
+        <p class="event-info">
+          
+          A relaxing group session with people from your community priortising on stretching, breathing and various physical activities.
+        </p>
+        <p class="event-date">Starting from : 4 June 2026</p>
+        <a href="bookingpage.html" class="card-btn">Register</a> <!--linking the button with booking page-->
+      </div>
+
+      <div class="eventcard"> <!--reusing the saem created class so that all cards looks similar-->
+        <h3>Cooking Workshop</h3>
+        <p class="event-info">
+          
+          Learn some basic healthy receipes that benefits our lifestyle and discover new cooking tips with your neighbourhood.
+        </p>
+        <p class="event-date">Starting from : 14 June 2026</p>
+        <a href="bookingpage.html" class="card-btn">Register</a>
+      </div>
+
+      <div class="eventcard">
+        <h3>Stress Seminar</h3>
+        <p class="event-info">
+          
+          Don't worry about stress, join this seminar to know about its cause and ways to tackle it from our daily life.
+        </p>
+        <p class="event-date">Starting from : 24 June 2026</p>
+        <a href="bookingpage.html" class="card-btn">Register</a>
+      </div>
+
+    </div>
+    
+  </section>
+
+  
+
+  <footer class="footer"><!--footer is same like it was in previous pages-->
+    <div>
+      <p>Community Wellbeing Hub</p>
+      <p>“Supporting your Health &amp; Wellbeing”</p>
+    </div>
+
+    <div>
+      <p>Email: communitywellbeing@gmail.com</p>
+      <p>Phone: 07570730568</p>
+    </div>
+  </footer>
+
+</body>
+  <script src="nav.js"></script>
+</html>

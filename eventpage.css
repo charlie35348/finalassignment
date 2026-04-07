@@ -1,0 +1,90 @@
+.eventbackground {
+  background-color: #dfe8e4; 
+  padding: 194px 0; /* making space above and below the cards, ignoreing sides*/
+}
+
+.eventcards {
+  width: 1200px;
+  margin: 0 auto; /* helps to put card in a center automatically */
+  display: flex; /* uses flexlayout and make all card aligned*/
+  justify-content: space-between; /* will align each card evenly in a row*/
+  gap: 30px; /* this is the space between each cards*/
+}
+
+.eventcard { /* all of the functionality same as from the service.css*/
+  width: 32%;
+  background-color: #ffffff;
+  border-radius: 18px;
+  text-align: center;
+  padding: 25px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  min-height: 260px;
+}
+
+.eventcard h3 {
+  font-size: 28px;
+  margin-bottom: 18px;
+  font-family: Arial, sans-serif;
+  font-weight: 700; /* making heading look like heading by maming it bold*/
+}
+
+.event-info {
+  font-size: 18px;
+  line-height: 1.5; /* making info text from all page look of same gap*/
+  margin-bottom: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.event-date {
+  font-size: 18px;
+  margin-bottom: 22px;
+  font-family: Arial, sans-serif;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+/* ================= FINAL MOBILE OVERRIDE ================= */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .eventbackground {
+    padding: 24px 14px !important;
+  }
+
+  .eventcards {
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .eventcard {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 20px 16px !important;
+    min-height: auto !important;
+  }
+
+  .eventcard h3 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .event-info,
+  .event-date {
+    font-size: 16px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  .eventcard .card-btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 220px;
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+}
